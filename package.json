@@ -1,0 +1,39 @@
+{
+  "name": "@local/dsh-scribble",
+  "version": "0.3.3",
+  "private": true,
+  "type": "module",
+  "description": "手稿本：让 DSH 用自己画的字和简笔画出图，并从你画过的画里学习你的手写风格。",
+  "license": "MIT",
+  "main": "./host.js",
+  "exports": {
+    ".": "./host.js",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "host.js",
+    "lib/**",
+    "locale/*.json",
+    "icon.svg",
+    "NOTICE",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "docs/**",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "handwriting",
+    "font",
+    "doodle",
+    "scribble"
+  ]
+}
